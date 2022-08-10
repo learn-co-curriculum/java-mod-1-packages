@@ -66,10 +66,14 @@ Here are the main things you should know about packages in Java:
    in the `com.dundermifflin.grading` package I would not need to import my
    `StudentGradeTranslator` class into those classes since they are all under
    the same package.
-12345678910111213141516171819202122232425262728293031323334353637383940404143454
 6. As we have seen in our Access Modifiers lesson, packages play apart in
    how classes, variables, methods, and constructors can access one another.
    The default access modifier allows variables, methods, and constructors in a
    class to be visible to any other classes in the same package. This means, if
    we were to define a method without an access modifier attached to it, classes
    within the same package could directly access that method.
+
+
+It should also be noted that the **default package** in Java is the `java.lang`
+package. Therefore, every program in Java uses this package and any classes
+within this package will not need to be imported.
